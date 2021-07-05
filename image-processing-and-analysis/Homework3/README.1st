@@ -1,0 +1,48 @@
+Objective of the homework:
+
+Construct a point distribution model as discussed in class, i.e.,
+
+ 1) Write a function that computes a mean and aligns all other 
+point sets to it.
+
+ 2) Write a function to extract the three most important 
+shape variations using principal component analysis. 
+Show the results.
+
+ 3) Document all equations you use or steps you take
+and explain what they are used for.
+
+ 4) Turn in the mini-writeup of 3), the source code you wrote,
+and a print-out of the results it produced.
+
+ 
+DUE DATE: Any time before or on Decemeber 10, 2013
+
+Data files and Matlab scripts:
+(You are not required to use matlab, but it may make
+things easier for you, because you can use some utility
+scripts I wrote)
+------------------------------
+
+dat/ : 	Contains all the point-data
+
+	Points are already correctly ordered, i.e.,
+	the ordering implies the correspondence
+
+readPoints.m : 	
+	Allows you the read one of the data files
+	(It's a very easy format; if you don't want
+	to use matlab it should be straightforward
+	to parse it with any other software
+
+readCases.m :
+	Reads all the cases at draws them on top of each other.
+	This gives you an idea as to the misalignment that is present.
+
+getAlignedPts.m :
+	Aligns one point set with respect to the other
+	using a similarity transform.
+	You can use this as a basis for your PDM algorithm.
+
+testAlign.m :
+	A test script that shows you how to use getAlignedPts.m
